@@ -1,116 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KFoodODM | Functional Food OEM/ODM</title>
-  <meta name="description" content="Korean functional food OEM/ODM for global wellness brands. Small MOQ, rapid development, and export-ready compliance." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KFoodODM | 한국 기능성 식품 OEM/ODM</title>
+  <meta name="description" content="KFoodODM은 한국 기능성 식품 OEM/ODM 서비스를 제공하는 플랫폼입니다. Small MOQ, 빠른 개발, 맞춤형 건강식품 생산 지원.">
+  <meta name="keywords" content="기능성 식품 OEM, 기능성 식품 ODM, 건강기능식품, 소량 생산, 한국 식품 제조, K-푸드, OEM, ODM, Health Functional Food">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kfoododm.com/">
+  <meta property="og:title" content="KFoodODM | 한국 기능성 식품 OEM/ODM">
+  <meta property="og:description" content="Small MOQ, 맞춤형 건강기능식품 제조 전문 서비스.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kfoododm.com/">
+  <meta property="og:site_name" content="KFoodODM">
+
   <style>
-    body { font-family: 'Inter', 'Noto Sans KR', sans-serif; margin: 0; background: #fffdfb; color: #222; }
-    header { background-color: #FF5722; color: white; text-align: center; padding: 2rem 1rem; position: relative; }
-    header h1 { margin: 0; font-size: 2rem; }
-    nav { margin-top: 1rem; }
-    nav a { margin: 0 1rem; color: white; text-decoration: none; font-weight: 600; }
-    .lang-switch { text-align: center; margin: 1rem 0; }
-    .lang-switch button { margin: 0 0.5rem; padding: 0.3rem 0.8rem; border: none; background: #FF5722; color: white; font-weight: bold; cursor: pointer; border-radius: 4px; }
-    .container { max-width: 1000px; margin: auto; padding: 2rem 1rem; }
-    .hero { text-align: center; margin-bottom: 3rem; }
-    .hero img { max-width: 100%; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); }
-    .hero h2 { font-size: 1.8rem; color: #FF5722; }
-    .features { display: flex; flex-direction: column; gap: 1.5rem; }
-    .feature { border-left: 5px solid #FF5722; padding-left: 1rem; }
-    .cta { text-align: center; margin-top: 3rem; }
-    .cta a { background: #FF5722; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 4px; font-weight: bold; }
-    footer { text-align: center; font-size: 0.85rem; color: #777; margin-top: 3rem; padding: 1rem 0; border-top: 1px solid #eee; }
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+    header {
+      background: #004aad;
+      color: #fff;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      margin-top: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1rem 0;
+      font-size: 0.8rem;
+      color: #555;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+    .lang-switch button {
+      background: #eee;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
+
+<header>
+  <h1 id="title">한국 기능성 식품 OEM/ODM 서비스</h1>
+  <nav>
+    <a href="#services">서비스</a>
+    <a href="#contact">문의</a>
+  </nav>
+</header>
+
+<div class="container">
   <div class="lang-switch">
     <button onclick="setLanguage('ko')">한국어</button>
     <button onclick="setLanguage('en')">English</button>
   </div>
 
-  <header>
-    <h1 id="site-title">KFoodODM</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="oem-odm.html">OEM/ODM</a>
-      <a href="catalog.html">Catalog</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <section id="intro">
+    <h2>소개</h2>
+    <p id="intro-text">
+      KFoodODM은 소량 주문(MOQ 100개)부터 시작할 수 있는 맞춤형 건강기능식품 OEM/ODM 서비스를 제공합니다. 빠른 개발, 품질 관리, 해외 수출용 인증까지 지원합니다.
+    </p>
+  </section>
 
-  <main class="container">
-    <section class="hero" id="about">
-      <img src="8f8f13f9-9b06-4a48-9cd9-54fa8891d3a3.png" alt="Lab with functional food" />
-      <h2 id="hero-title">Functional Food Innovation from Korea</h2>
-      <p id="hero-text">We provide OEM & ODM services for global wellness brands. Start from just 100 units with full support for formulation, packaging, and export.</p>
-    </section>
+  <section id="services">
+    <h2>주요 서비스</h2>
+    <ul id="services-list">
+      <li>건강기능식품 OEM/ODM 개발</li>
+      <li>소량 주문 생산 지원</li>
+      <li>수출용 제품 인증 및 컨설팅</li>
+      <li>개발부터 생산까지 One-Stop 솔루션</li>
+    </ul>
+  </section>
 
-    <section id="services" class="features">
-      <div class="feature">
-        <h3 id="s1-title">Small-Batch OEM</h3>
-        <p id="s1-text">Quick-start manufacturing from 100 units. Ideal for testing and pilot launches.</p>
-      </div>
-      <div class="feature">
-        <h3 id="s2-title">Full ODM Development</h3>
-        <p id="s2-text">Custom formulation, regulatory support, and packaging tailored to your brand.</p>
-      </div>
-      <div class="feature">
-        <h3 id="s3-title">Export-Ready Production</h3>
-        <p id="s3-text">Compliant with global standards. We help you go international from day one.</p>
-      </div>
-    </section>
+  <section id="contact">
+    <h2>문의하기</h2>
+    <p id="contact-text">협업 및 견적 문의는 이메일로 연락주세요: <strong>info@kfoododm.com</strong></p>
+  </section>
+</div>
 
-    <section class="cta">
-      <a href="mailto:info@kfoododm.com">Contact Us</a>
-    </section>
+<footer>
+  &copy; 2025 KFoodODM. All rights reserved.
+</footer>
 
-    <section id="contact" class="features" style="margin-top: 3rem;">
-      <div class="feature">
-        <h3>Contact</h3>
-        <p id="contact-text">Email: <strong>info@kfoododm.com</strong></p>
-      </div>
-    </section>
-  </main>
+<script>
+const content = {
+  ko: {
+    title: "한국 기능성 식품 OEM/ODM 서비스",
+    intro: "KFoodODM은 소량 주문(MOQ 100개)부터 시작할 수 있는 맞춤형 건강기능식품 OEM/ODM 서비스를 제공합니다. 빠른 개발, 품질 관리, 해외 수출용 인증까지 지원합니다.",
+    services: ["건강기능식품 OEM/ODM 개발", "소량 주문 생산 지원", "수출용 제품 인증 및 컨설팅", "개발부터 생산까지 One-Stop 솔루션"],
+    contact: "협업 및 견적 문의는 이메일로 연락주세요: <strong>info@kfoododm.com</strong>"
+  },
+  en: {
+    title: "Korean Functional Food OEM/ODM Services",
+    intro: "KFoodODM offers customized health functional food OEM/ODM services starting from small MOQ (100 units). We support rapid development, quality control, and export certifications.",
+    services: ["Health Functional Food OEM/ODM Development", "Support for Small Quantity Orders", "Export Certification & Consulting", "One-Stop Solution from Development to Production"],
+    contact: "For collaboration and quotes, please email us at: <strong>info@kfoododm.com</strong>"
+  }
+};
 
-  <footer>
-    &copy; 2025 KFoodODM. All rights reserved.
-  </footer>
+function setLanguage(lang) {
+  document.getElementById('title').innerText = content[lang].title;
+  document.getElementById('intro-text').innerText = content[lang].intro;
+  
+  const services = content[lang].services;
+  const servicesList = document.getElementById('services-list');
+  servicesList.innerHTML = "";
+  services.forEach(item => {
+    const li = document.createElement('li');
+    li.innerText = item;
+    servicesList.appendChild(li);
+  });
 
-  <script>
-    const content = {
-      en: {
-        title: "Functional Food Innovation from Korea",
-        hero: "We provide OEM & ODM services for global wellness brands. Start from just 100 units with full support for formulation, packaging, and export.",
-        s1: ["Small-Batch OEM", "Quick-start manufacturing from 100 units. Ideal for testing and pilot launches."],
-        s2: ["Full ODM Development", "Custom formulation, regulatory support, and packaging tailored to your brand."],
-        s3: ["Export-Ready Production", "Compliant with global standards. We help you go international from day one."],
-        contact: "Email: <strong>info@kfoododm.com</strong>"
-      },
-      ko: {
-        title: "한국 기능성 식품 OEM/ODM",
-        hero: "KFoodODM은 전 세계 웰니스 브랜드를 위한 OEM/ODM 서비스를 제공합니다. 100개부터 시작 가능한 소량 생산과 맞춤형 개발을 지원합니다.",
-        s1: ["소량 OEM 생산", "100개부터 빠르게 생산 시작 가능. 테스트 및 초기 출시용에 적합합니다."],
-        s2: ["완전 ODM 개발", "배합 설계, 인증, 포장까지 브랜드 맞춤형으로 지원합니다."],
-        s3: ["수출형 제품 설계", "글로벌 기준을 충족하는 제품 생산으로 해외 진출을 지원합니다."],
-        contact: "이메일: <strong>info@kfoododm.com</strong>"
-      }
-    };
+  document.getElementById('contact-text').innerHTML = content[lang].contact;
+}
+</script>
 
-    function setLanguage(lang) {
-      document.getElementById("hero-title").innerText = content[lang].title;
-      document.getElementById("hero-text").innerText = content[lang].hero;
-      document.getElementById("s1-title").innerText = content[lang].s1[0];
-      document.getElementById("s1-text").innerText = content[lang].s1[1];
-      document.getElementById("s2-title").innerText = content[lang].s2[0];
-      document.getElementById("s2-text").innerText = content[lang].s2[1];
-      document.getElementById("s3-title").innerText = content[lang].s3[0];
-      document.getElementById("s3-text").innerText = content[lang].s3[1];
-      document.getElementById("contact-text").innerHTML = content[lang].contact;
-    }
-  </script>
 </body>
 </html>
