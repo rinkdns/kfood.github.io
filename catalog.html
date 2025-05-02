@@ -3,111 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KFoodODM | Product Types & Packaging</title>
-  <meta name="description" content="Explore the various functional food formats and packaging types offered by KFoodODM, including powders, tablets, capsules, and jelly sticks.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <title>KFoodODM | Functional Food OEM/ODM</title>
+  <meta name="description" content="Korean functional food OEM/ODM for global wellness brands. Small MOQ, rapid development, and export-ready compliance." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+KR&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background: #f7f7f7;
-      color: #222;
-    }
-    header {
-      background: #FF5722;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-    .section-title {
-      font-size: 1.5rem;
-      color: #FF5722;
-      margin-top: 3rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #FF5722;
-      display: inline-block;
-      padding-bottom: 0.2rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-    .item {
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      text-align: center;
-      padding: 1rem;
-    }
-    .item img {
-      max-width: 100%;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 0.5rem;
-    }
-    .item p {
-      margin: 0;
-      font-size: 0.95rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.8rem;
-      color: #777;
-      border-top: 1px solid #ddd;
-      margin-top: 3rem;
-    }
+    body { font-family: 'Inter', 'Noto Sans KR', sans-serif; margin: 0; background: #fffdfb; color: #222; }
+    header { background-color: #FF5722; color: white; text-align: center; padding: 2rem 1rem; position: relative; }
+    header h1 { margin: 0; font-size: 2rem; }
+    nav { margin-top: 1rem; }
+    nav a { margin: 0 1rem; color: white; text-decoration: none; font-weight: 600; }
+    .lang-switch { position: absolute; top: 1rem; right: 1rem; }
+    .lang-switch button { margin-left: 0.5rem; padding: 0.3rem 0.8rem; border: none; background: white; color: #FF5722; font-weight: bold; cursor: pointer; border-radius: 4px; }
+    .container { max-width: 1000px; margin: auto; padding: 2rem 1rem; }
+    .hero { text-align: center; margin-bottom: 3rem; }
+    .hero img { max-width: 100%; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); }
+    .hero h2 { font-size: 1.8rem; color: #FF5722; }
+    .features { display: flex; flex-direction: column; gap: 1.5rem; }
+    .feature { border-left: 5px solid #FF5722; padding-left: 1rem; }
+    .cta { text-align: center; margin-top: 3rem; }
+    .cta a { background: #FF5722; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 4px; font-weight: bold; }
+    footer { text-align: center; font-size: 0.85rem; color: #777; margin-top: 3rem; padding: 1rem 0; border-top: 1px solid #eee; }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>Product Formats & Packaging</h1>
-</header>
-
-<div class="container">
-  <div>
-    <div class="section-title">Functional Food Formats</div>
-    <div class="grid">
-      <div class="item"><img src="catalog/1_powder.png" alt="Powder"><p>Powder (분말)</p></div>
-      <div class="item"><img src="catalog/2_granule.png" alt="Granule"><p>Granule (과립)</p></div>
-      <div class="item"><img src="catalog/3_tablet.png" alt="Tablet"><p>Tablet (정제)</p></div>
-      <div class="item"><img src="catalog/4_sphere.png" alt="Spheres"><p>Spheres (환)</p></div>
-      <div class="item"><img src="catalog/5_capsule.png" alt="Capsule"><p>Capsule (캡슐)</p></div>
-      <div class="item"><img src="catalog/6_softgel.png" alt="Softgel"><p>Softgel (연질캡슐)</p></div>
-      <div class="item"><img src="catalog/7_liquid.png" alt="Liquid"><p>Liquid (액상)</p></div>
-      <div class="item"><img src="catalog/8_jelly.png" alt="Jelly Stick"><p>Jelly Stick (젤리 스틱)</p></div>
-    </div>
+  <div class="lang-switch">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('ko')">KR</button>
   </div>
 
-  <div>
-    <div class="section-title">Packaging Options</div>
-    <div class="grid">
-      <div class="item"><img src="catalog/p_bottle.png" alt="Bottle"><p>HDPE Bottle (플라스틱 병)</p></div>
-      <div class="item"><img src="catalog/p_stick.png" alt="Stick"><p>Stick Pack (스틱형 파우치)</p></div>
-      <div class="item"><img src="catalog/p_ptp.png" alt="PTP"><p>PTP Blister (PTP 포장)</p></div>
-      <div class="item"><img src="catalog/p_sachet.png" alt="Sachet"><p>Sachet (소포장 파우치)</p></div>
-      <div class="item"><img src="catalog/p_doypack.png" alt="Doypack"><p>Doypack (스탠딩 파우치)</p></div>
-    </div>
-  </div>
-</div>
+  <header>
+    <h1 id="site-title">KFoodODM</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="oem-odm.html">OEM/ODM</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<footer>
-  &copy; 2025 KFoodODM. All rights reserved.
-</footer>
+  <main class="container">
+    <section class="hero" id="about">
+      <img src="8f8f13f9-9b06-4a48-9cd9-54fa8891d3a3.png" alt="Lab with functional food" />
+      <h2 id="hero-title">Functional Food Innovation from Korea</h2>
+      <p id="hero-text">We provide OEM & ODM services for global wellness brands. Start from just 100 units with full support for formulation, packaging, and export.</p>
+    </section>
 
+    <section id="services" class="features">
+      <div class="feature">
+        <h3 id="s1-title">Small-Batch OEM</h3>
+        <p id="s1-text">Quick-start manufacturing from 100 units. Ideal for testing and pilot launches.</p>
+      </div>
+      <div class="feature">
+        <h3 id="s2-title">Full ODM Development</h3>
+        <p id="s2-text">Custom formulation, regulatory support, and packaging tailored to your brand.</p>
+      </div>
+      <div class="feature">
+        <h3 id="s3-title">Export-Ready Production</h3>
+        <p id="s3-text">Compliant with global standards. We help you go international from day one.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <a href="mailto:info@kfoododm.com">Contact Us</a>
+    </section>
+
+    <section id="contact" class="features" style="margin-top: 3rem;">
+      <div class="feature">
+        <h3>Contact</h3>
+        <p id="contact-text">Email: <strong>info@kfoododm.com</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 KFoodODM. All rights reserved.
+  </footer>
+
+  <script>
+    const content = {
+      en: {
+        title: "Functional Food Innovation from Korea",
+        hero: "We provide OEM & ODM services for global wellness brands. Start from just 100 units with full support for formulation, packaging, and export.",
+        s1: ["Small-Batch OEM", "Quick-start manufacturing from 100 units. Ideal for testing and pilot launches."],
+        s2: ["Full ODM Development", "Custom formulation, regulatory support, and packaging tailored to your brand."],
+        s3: ["Export-Ready Production", "Compliant with global standards. We help you go international from day one."],
+        contact: "Email: <strong>info@kfoododm.com</strong>"
+      },
+      ko: {
+        title: "한국 기능성 식품 OEM/ODM",
+        hero: "KFoodODM은 전 세계 웰니스 브랜드를 위한 OEM/ODM 서비스를 제공합니다. 100개부터 시작 가능한 소량 생산과 맞춤형 개발을 지원합니다.",
+        s1: ["소량 OEM 생산", "100개부터 빠르게 생산 시작 가능. 테스트 및 초기 출시용에 적합합니다."],
+        s2: ["완전 ODM 개발", "배합 설계, 인증, 포장까지 브랜드 맞춤형으로 지원합니다."],
+        s3: ["수출형 제품 설계", "글로벌 기준을 충족하는 제품 생산으로 해외 진출을 지원합니다."],
+        contact: "이메일: <strong>info@kfoododm.com</strong>"
+      }
+    };
+
+    function setLanguage(lang) {
+      document.getElementById("hero-title").innerText = content[lang].title;
+      document.getElementById("hero-text").innerText = content[lang].hero;
+      document.getElementById("s1-title").innerText = content[lang].s1[0];
+      document.getElementById("s1-text").innerText = content[lang].s1[1];
+      document.getElementById("s2-title").innerText = content[lang].s2[0];
+      document.getElementById("s2-text").innerText = content[lang].s2[1];
+      document.getElementById("s3-title").innerText = content[lang].s3[0];
+      document.getElementById("s3-text").innerText = content[lang].s3[1];
+      document.getElementById("contact-text").innerHTML = content[lang].contact;
+    }
+  </script>
 </body>
 </html>
