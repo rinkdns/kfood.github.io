@@ -1,115 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KFoodODM | Functional Food OEM/ODM</title>
-  <meta name="description" content="Korean functional food OEM/ODM for global wellness brands. Small MOQ, rapid development, and export-ready compliance." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Catalog | KFoodODM</title>
+  <meta name="description" content="Explore functional food forms and packaging options offered by KFoodODM. Bilingual English and Korean.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', 'Noto Sans KR', sans-serif; margin: 0; background: #fffdfb; color: #222; }
-    header { background-color: #FF5722; color: white; text-align: center; padding: 2rem 1rem; position: relative; }
-    header h1 { margin: 0; font-size: 2rem; }
+    body { font-family: 'Inter', sans-serif; margin: 0; background: #fffdfb; color: #222; }
+    header { background: #FF5722; color: white; text-align: center; padding: 1.5rem 0; }
     nav { margin-top: 1rem; }
-    nav a { margin: 0 1rem; color: white; text-decoration: none; font-weight: 600; }
-    .lang-switch { position: absolute; top: 1rem; right: 1rem; }
-    .lang-switch button { margin-left: 0.5rem; padding: 0.3rem 0.8rem; border: none; background: white; color: #FF5722; font-weight: bold; cursor: pointer; border-radius: 4px; }
-    .container { max-width: 1000px; margin: auto; padding: 2rem 1rem; }
-    .hero { text-align: center; margin-bottom: 3rem; }
-    .hero img { max-width: 100%; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); }
-    .hero h2 { font-size: 1.8rem; color: #FF5722; }
-    .features { display: flex; flex-direction: column; gap: 1.5rem; }
-    .feature { border-left: 5px solid #FF5722; padding-left: 1rem; }
-    .cta { text-align: center; margin-top: 3rem; }
-    .cta a { background: #FF5722; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 4px; font-weight: bold; }
-    footer { text-align: center; font-size: 0.85rem; color: #777; margin-top: 3rem; padding: 1rem 0; border-top: 1px solid #eee; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    .container { max-width: 960px; margin: 2rem auto; padding: 1rem; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    .lang-switch { text-align: center; margin-bottom: 2rem; }
+    .lang-switch button { background: #FF5722; border: none; color: white; font-weight: bold; padding: 0.5rem 1rem; margin: 0 0.5rem; border-radius: 4px; cursor: pointer; }
+    .section { margin-bottom: 2rem; }
+    h2 { color: #FF5722; }
+    ul { padding-left: 1.2rem; }
   </style>
 </head>
 <body>
-  <div class="lang-switch">
-    <button onclick="setLanguage('en')">EN</button>
-    <button onclick="setLanguage('ko')">KR</button>
-  </div>
-
   <header>
-    <h1 id="site-title">KFoodODM</h1>
+    <h1 id="page-title">Product Catalog</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="oem-odm.html">OEM/ODM</a>
-      <a href="catalog.html">Catalog</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#catalog">Catalog</a>
+      <a href="index.html#process">OEM/ODM Process</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="hero" id="about">
-      <img src="8f8f13f9-9b06-4a48-9cd9-54fa8891d3a3.png" alt="Lab with functional food" />
-      <h2 id="hero-title">Functional Food Innovation from Korea</h2>
-      <p id="hero-text">We provide OEM & ODM services for global wellness brands. Start from just 100 units with full support for formulation, packaging, and export.</p>
-    </section>
+  <div class="container">
+    <div class="lang-switch">
+      <button onclick="setLang('en')">English</button>
+      <button onclick="setLang('ko')">한국어</button>
+    </div>
 
-    <section id="services" class="features">
-      <div class="feature">
-        <h3 id="s1-title">Small-Batch OEM</h3>
-        <p id="s1-text">Quick-start manufacturing from 100 units. Ideal for testing and pilot launches.</p>
-      </div>
-      <div class="feature">
-        <h3 id="s2-title">Full ODM Development</h3>
-        <p id="s2-text">Custom formulation, regulatory support, and packaging tailored to your brand.</p>
-      </div>
-      <div class="feature">
-        <h3 id="s3-title">Export-Ready Production</h3>
-        <p id="s3-text">Compliant with global standards. We help you go international from day one.</p>
-      </div>
-    </section>
+    <div class="section">
+      <h2 id="format-title">Product Formats</h2>
+      <ul id="format-list">
+        <li>Powder</li>
+        <li>Tablet</li>
+        <li>Capsule</li>
+        <li>Softgel</li>
+        <li>Jelly Stick</li>
+        <li>Liquid</li>
+        <li>Granule</li>
+        <li>Ball Type (환)</li>
+      </ul>
+    </div>
 
-    <section class="cta">
-      <a href="mailto:info@kfoododm.com">Contact Us</a>
-    </section>
-
-    <section id="contact" class="features" style="margin-top: 3rem;">
-      <div class="feature">
-        <h3>Contact</h3>
-        <p id="contact-text">Email: <strong>andrew@rinkdns.com</strong></p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 KFoodODM. All rights reserved.
-  </footer>
+    <div class="section">
+      <h2 id="pack-title">Packaging Types</h2>
+      <ul id="pack-list">
+        <li>HDPE Bottle</li>
+        <li>Stick Pack</li>
+        <li>PTP Blister</li>
+        <li>Sachet Pouch</li>
+        <li>Doypack</li>
+      </ul>
+    </div>
+  </div>
 
   <script>
     const content = {
       en: {
-        title: "Functional Food Innovation from Korea",
-        hero: "We provide OEM & ODM services for global wellness brands. Start from just 100 units with full support for formulation, packaging, and export.",
-        s1: ["Small-Batch OEM", "Quick-start manufacturing from 100 units. Ideal for testing and pilot launches."],
-        s2: ["Full ODM Development", "Custom formulation, regulatory support, and packaging tailored to your brand."],
-        s3: ["Export-Ready Production", "Compliant with global standards. We help you go international from day one."],
-        contact: "Email: <strong>info@kfoododm.com</strong>"
+        title: "Product Catalog",
+        formatTitle: "Product Formats",
+        formats: ["Powder", "Tablet", "Capsule", "Softgel", "Jelly Stick", "Liquid", "Granule", "Ball Type (환)"],
+        packTitle: "Packaging Types",
+        packs: ["HDPE Bottle", "Stick Pack", "PTP Blister", "Sachet Pouch", "Doypack"]
       },
       ko: {
-        title: "한국 기능성 식품 OEM/ODM",
-        hero: "KFoodODM은 전 세계 웰니스 브랜드를 위한 OEM/ODM 서비스를 제공합니다. 100개부터 시작 가능한 소량 생산과 맞춤형 개발을 지원합니다.",
-        s1: ["소량 OEM 생산", "100개부터 빠르게 생산 시작 가능. 테스트 및 초기 출시용에 적합합니다."],
-        s2: ["완전 ODM 개발", "배합 설계, 인증, 포장까지 브랜드 맞춤형으로 지원합니다."],
-        s3: ["수출형 제품 설계", "글로벌 기준을 충족하는 제품 생산으로 해외 진출을 지원합니다."],
-        contact: "이메일: <strong>info@kfoododm.com</strong>"
+        title: "제품 카탈로그",
+        formatTitle: "제품 제형",
+        formats: ["분말", "정제", "캡슐", "연질캡슐", "젤리스틱", "액상", "과립", "환 형태"],
+        packTitle: "포장 형태",
+        packs: ["플라스틱 병", "스틱 포장", "PTP 포장", "소포장 파우치", "스탠딩 파우치"]
       }
     };
 
-    function setLanguage(lang) {
-      document.getElementById("hero-title").innerText = content[lang].title;
-      document.getElementById("hero-text").innerText = content[lang].hero;
-      document.getElementById("s1-title").innerText = content[lang].s1[0];
-      document.getElementById("s1-text").innerText = content[lang].s1[1];
-      document.getElementById("s2-title").innerText = content[lang].s2[0];
-      document.getElementById("s2-text").innerText = content[lang].s2[1];
-      document.getElementById("s3-title").innerText = content[lang].s3[0];
-      document.getElementById("s3-text").innerText = content[lang].s3[1];
-      document.getElementById("contact-text").innerHTML = content[lang].contact;
+    function setLang(lang) {
+      document.getElementById('page-title').innerText = content[lang].title;
+      document.getElementById('format-title').innerText = content[lang].formatTitle;
+      document.getElementById('pack-title').innerText = content[lang].packTitle;
+
+      const formatList = document.getElementById('format-list');
+      formatList.innerHTML = "";
+      content[lang].formats.forEach(item => {
+        const li = document.createElement('li');
+        li.innerText = item;
+        formatList.appendChild(li);
+      });
+
+      const packList = document.getElementById('pack-list');
+      packList.innerHTML = "";
+      content[lang].packs.forEach(item => {
+        const li = document.createElement('li');
+        li.innerText = item;
+        packList.appendChild(li);
+      });
     }
   </script>
 </body>
