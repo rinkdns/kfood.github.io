@@ -20,10 +20,11 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background: #f9f9f9;
+      background: #fffdfb;
+      color: #222;
     }
     header {
-      background: #004aad;
+      background: #FF5722;
       color: #fff;
       padding: 1.5rem 0;
       text-align: center;
@@ -39,7 +40,7 @@
     }
     .container {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       background: white;
       margin-top: 2rem;
@@ -54,15 +55,27 @@
       color: #555;
     }
     .lang-switch {
-      text-align: right;
-      margin-bottom: 1rem;
+      text-align: center;
+      margin: 2rem 0;
     }
     .lang-switch button {
-      background: #eee;
+      background: #FF5722;
       border: none;
-      padding: 0.5rem 1rem;
-      margin-left: 0.5rem;
+      padding: 0.5rem 1.2rem;
+      margin: 0 0.5rem;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
       cursor: pointer;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -77,15 +90,8 @@
 </header>
 
 <div class="container">
-  <section id="intro">
-    <h2>소개</h2>
-    <p id="intro-text">
-      KFoodODM은 소량 주문(MOQ 100개)부터 시작할 수 있는 맞춤형 건강기능식품 OEM/ODM 서비스를 제공합니다. 빠른 개발, 품질 관리, 해외 수출용 인증까지 지원합니다.
-    </p>
-  </section>
-
   <section class="hero">
-    <img src="8f8f13f9-9b06-4a48-9cd9-54fa8891d3a3.png" alt="Lab with functional food" style="width:100%; border-radius:12px; margin-bottom:1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+    <img src="8f8f13f9-9b06-4a48-9cd9-54fa8891d3a3.png" alt="Lab with functional food" />
   </section>
 
   <div class="lang-switch">
