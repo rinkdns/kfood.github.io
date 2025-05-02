@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OEM / ODM 소개 | KFoodODM</title>
+  <meta name="description" content="KFoodODM은 한국 건강기능식품 OEM/ODM 전문 기업입니다. 소량 생산부터 대량 생산까지 맞춤형 식품 개발을 지원합니다.">
+  <meta name="keywords" content="기능성 식품, OEM, ODM, 건강기능식품, 소량 생산, 맞춤 제조, K-푸드, 수출용 식품">
+  <link rel="canonical" href="https://kfoododm.com/oem-odm.html">
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #004aad;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      margin-top: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+    .lang-switch button {
+      background: #eee;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.8rem;
+      color: #555;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="page-title">OEM / ODM 회사 소개</h1>
+</header>
+
+<div class="container">
+  <div class="lang-switch">
+    <button onclick="setLanguage('ko')">한국어</button>
+    <button onclick="setLanguage('en')">English</button>
+  </div>
+
+  <section id="company-intro">
+    <h2>회사 소개</h2>
+    <p id="intro-text">
+      KFoodODM은 건강기능식품 및 기능성 일반식품의 OEM/ODM 전문 회사입니다. 국내외 브랜드를 위한 소량 생산부터 대량 생산까지 맞춤형 개발을 지원하며, 제품 기획, 배합, 제조, 인증까지 원스톱 솔루션을 제공합니다.
+    </p>
+  </section>
+
+  <section id="why-choose">
+    <h2>왜 KFoodODM인가?</h2>
+    <ul id="why-list">
+      <li>MOQ 100개부터 시작 가능한 유연한 생산 시스템</li>
+      <li>15년 이상의 식품개발 및 제조 컨설팅 경험</li>
+      <li>HACCP, 수출 인증 등 품질 기준 엄격히 준수</li>
+      <li>글로벌 수출용 제품 기획 및 포장 디자인 제공</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>문의하기</h2>
+    <p id="contact-text">OEM/ODM 프로젝트에 대한 상담은 언제든지 <strong>info@kfoododm.com</strong> 으로 문의주세요.</p>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 KFoodODM. All rights reserved.
+</footer>
+
+<script>
+const content = {
+  ko: {
+    title: "OEM / ODM 회사 소개",
+    intro: "KFoodODM은 건강기능식품 및 기능성 일반식품의 OEM/ODM 전문 회사입니다. 국내외 브랜드를 위한 소량 생산부터 대량 생산까지 맞춤형 개발을 지원하며, 제품 기획, 배합, 제조, 인증까지 원스톱 솔루션을 제공합니다.",
+    why: [
+      "MOQ 100개부터 시작 가능한 유연한 생산 시스템",
+      "15년 이상의 식품개발 및 제조 컨설팅 경험",
+      "HACCP, 수출 인증 등 품질 기준 엄격히 준수",
+      "글로벌 수출용 제품 기획 및 포장 디자인 제공"
+    ],
+    contact: "OEM/ODM 프로젝트에 대한 상담은 언제든지 <strong>info@kfoododm.com</strong> 으로 문의주세요."
+  },
+  en: {
+    title: "OEM / ODM Company Introduction",
+    intro: "KFoodODM specializes in OEM/ODM for health functional and general functional foods. We support custom development for small to large-scale production, offering a one-stop solution from planning, formulation, and manufacturing to certification.",
+    why: [
+      "Flexible production starting from MOQ 100 units",
+      "15+ years of food development and consulting experience",
+      "Strict adherence to HACCP and export standards",
+      "Export-ready product design and packaging consulting"
+    ],
+    contact: "For OEM/ODM inquiries, please contact us at <strong>info@kfoododm.com</strong>."
+  }
+};
+
+function setLanguage(lang) {
+  document.getElementById('page-title').innerText = content[lang].title;
+  document.getElementById('intro-text').innerText = content[lang].intro;
+  const whyList = document.getElementById('why-list');
+  whyList.innerHTML = "";
+  content[lang].why.forEach(item => {
+    const li = document.createElement('li');
+    li.innerText = item;
+    whyList.appendChild(li);
+  });
+  document.getElementById('contact-text').innerHTML = content[lang].contact;
+}
+</script>
+
+</body>
+</html>
