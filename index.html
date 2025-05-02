@@ -73,6 +73,7 @@
     }
     .hero img {
       width: 100%;
+      max-width: 900px;
       border-radius: 12px;
       margin-bottom: 1.5rem;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -145,7 +146,7 @@ const content = {
 function setLanguage(lang) {
   document.getElementById('title').innerText = content[lang].title;
   document.getElementById('intro-text').innerText = content[lang].intro;
-  
+
   const services = content[lang].services;
   const servicesList = document.getElementById('services-list');
   servicesList.innerHTML = "";
